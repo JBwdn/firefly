@@ -17,7 +17,7 @@ class Firefly {
     }
 
     flashing(nearby_flys, snapshot) {
-        let perception_range = 100;
+        let perception_range = 150;
 
         // influence the urges of neighbors when flashing:
         if (this.flash == true && this.flash_frame_counter == 1) { //this.flash_length / 2) {
@@ -32,7 +32,7 @@ class Firefly {
         }
 
         // Spontaneous flash based on urge:
-        let rng = random() * 100
+        let rng = random() * 1000
         if (this.flash == false && this.urge > rng) {
             console.log(rng, this.urge)
             this.flash = true;
