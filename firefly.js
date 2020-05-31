@@ -20,7 +20,7 @@ class Firefly {
         let perception_range = 100;
 
         // influence the urges of neighbors when flashing:
-        if (this.flash == true && this.flash_frame_counter == this.flash_length / 2) {
+        if (this.flash == true && this.flash_frame_counter == 1) { //this.flash_length / 2) {
             for (let i = 0; i < nearby_flys.length; i++) {
                 // for (let neighbor of nearby_flys) {
                 let neighbor = snapshot[i]
